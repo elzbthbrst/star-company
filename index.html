@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset-style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script/index.js" defer></script>
+    <title>Star Company</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <!-- header -->
+            <header class="header">
+                <img src="img/logo.svg" alt="" class="header__logo">
+                <form action="" class="header__log-in log-in">
+                    <div class="log-in__email">
+                        <input type="text" placeholder="Email">
+                        <p class="error-message">
+                            Please enter a valid email address
+                        </p>
+                    </div>
+                    <div class="log-in__password">
+                        <input type="text" placeholder="Password">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                    <button>Log In</button>
+                </form>
+            </header>
+            <!-- main -->
+            <main class="main">
+                <div class="main__content">
+                    <h1>
+                        StarCompany DESIGNS, MANUFACTURES AND
+                        <br>
+                        <span>Launches Advanced Rockets and spacecrafts</span>
+                    </h1>
+                    <section class="main__form form">
+                        <div class="form__container">
+                            <button class="form__return">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="10px" height="17px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M10.012,15.580 L8.580,17.012 L1.500,9.932 L1.420,10.012 L-0.013,8.580 L0.068,8.500 L-0.013,8.420 L1.420,6.988 L1.500,7.068 L8.580,-0.012 L10.012,1.420 L2.932,8.500 L10.012,15.580 Z" />
+                                </svg>
+                            </button>
+                            <div class="form__wrapper">
+                                <div class="form__item">
+                                    <form action="">
+                                        <h4>
+                                            Who are you?
+                                        </h4>
+                                        <div class="select-wrapper">
+                                            <select name="gender">
+                                                <option hidden disabled selected value> Select a gender </option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female
+                                                </option>
+                                            </select>
+                                            <div class="select-arrow"></div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="form__item">
+                                    <form action="">
+                                        <h4>
+                                            What is your age?
+                                        </h4>
+                                        <div class="select-wrapper">
+                                            <select name="age">
+                                                <option hidden disabled selected value> Select an age </option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                            </select>
+                                            <div class="select-arrow"></div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="form__item">
+                                    <form action="">
+                                        <h4>
+                                            I`m from
+                                        </h4>
+                                        <div class="select-wrapper">
+                                            <input name="location" placeholder="Please enter a location" type="text">
+                                        </div>
+
+
+                                    </form>
+                                    <p class="form__about">
+                                        E.g.: New Roads or 70760
+                                        <br>
+                                        We don’t use postal addresses to contact members
+                                        directly!
+                                    </p>
+                                </div>
+
+                                <div class="form__item">
+                                    <form action="">
+                                        <h4>
+                                            Your email address
+                                        </h4>
+                                        <div class="select-wrapper">
+                                            <input name="email" type="text" placeholder="Input your email">
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                                <div class="form__item">
+                                    <form action="">
+                                        <h4>
+                                            Create your password
+                                        </h4>
+                                        <div class="select-wrapper">
+                                            <input name="password" type="password" placeholder="Please enter a password">
+                                        </div>
+
+                                    </form>
+                                    <p class="form__about">
+                                        By clicking the button above you agree to <a href="#">out terms of use</a> and <a href="#">Privacy Policy</a>  Including use of cookies and to receive newsletters, account updates and offers sent by SentCompany.
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="form__nav-btn form__nav-btn_next"> <span>Next step</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="10px" height="17px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M10.012,8.580 L8.580,10.012 L8.500,9.932 L1.420,17.012 L-0.013,15.580 L7.068,8.500 L-0.013,1.420 L1.420,-0.012 L8.500,7.068 L8.580,6.988 L10.012,8.420 L9.932,8.500 L10.012,8.580 Z" />
+                                </svg>
+                            </button>
+                            <button class="form__nav-btn form__nav-btn_start display-none"> 
+                                <span>Star Now</span>                      
+                                <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="12px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M17.485,1.586 L7.586,11.485 L6.172,10.071 L6.172,10.071 L0.515,4.414 L1.929,3.000 L7.586,8.657 L16.071,0.172 L17.485,1.586 Z"/>
+                                </svg>
+                             </button> 
+                        </div>
+
+                        <div class="form__progress">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+    </div>
+</body>
+
+</html>
