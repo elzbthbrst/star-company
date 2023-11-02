@@ -49,39 +49,53 @@
                             </button>
                             <div class="form__wrapper">
                                 <div class="form__item">
-                                    <form action="">
+                                    <form id="gender" class="select-dropdown__form">
                                         <h4>
                                             Who are you?
                                         </h4>
-                                        <div class="select-wrapper">
-                                            <select name="gender">
-                                                <option hidden disabled selected value> Select a gender </option>
-                                                <option value="male">Male</option>
-                                                <option value="female">Female
-                                                </option>
-                                            </select>
-                                            <div class="select-arrow"></div>
-                                        </div>
+                                        <p class="select-dropdown__select">
+                                            Select your gender
+                                        </p>
 
+                                        <ul class="checkbox-dropdown__list">
+                                            <li>
+                                                <label>
+                                                    <input type="radio" value="Male" name="gender" />Male</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" value="Female" name="gender" />Female</label>
+                                            </li>
+                                        </ul>
                                     </form>
                                 </div>
-
                                 <div class="form__item">
-                                    <form action="">
+                                    <form id="age" class="select-dropdown__form">
                                         <h4>
                                             What is your age?
                                         </h4>
-                                        <div class="select-wrapper">
-                                            <select name="age">
-                                                <option hidden disabled selected value> Select an age </option>
-                                                <option value="19">19</option>
-                                                <option value="20">20</option>
-                                                <option value="21">21</option>
-                                                <option value="22">22</option>
-                                            </select>
-                                            <div class="select-arrow"></div>
-                                        </div>
+                                        <p class="select-dropdown__select">
+                                            Select an age
+                                        </p>
 
+                                        <ul class="checkbox-dropdown__list">
+                                            <li>
+                                                <label>
+                                                    <input type="radio" value="19" name="age" />19</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" value="20" name="age" />20</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" value="21" name="age" />21</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="radio" value="22" name="age" />22</label>
+                                            </li>
+                                        </ul>
                                     </form>
                                 </div>
 
@@ -122,12 +136,15 @@
                                             Create your password
                                         </h4>
                                         <div class="select-wrapper">
-                                            <input name="password" type="password" placeholder="Please enter a password">
+                                            <input name="password" type="password"
+                                                placeholder="Please enter a password">
                                         </div>
 
                                     </form>
                                     <p class="form__about">
-                                        By clicking the button above you agree to <a href="#">out terms of use</a> and <a href="#">Privacy Policy</a>  Including use of cookies and to receive newsletters, account updates and offers sent by SentCompany.
+                                        By clicking the button above you agree to <a href="#">out terms of use</a> and
+                                        <a href="#">Privacy Policy</a> Including use of cookies and to receive
+                                        newsletters, account updates and offers sent by SentCompany.
                                     </p>
                                 </div>
                             </div>
@@ -138,13 +155,14 @@
                                         d="M10.012,8.580 L8.580,10.012 L8.500,9.932 L1.420,17.012 L-0.013,15.580 L7.068,8.500 L-0.013,1.420 L1.420,-0.012 L8.500,7.068 L8.580,6.988 L10.012,8.420 L9.932,8.500 L10.012,8.580 Z" />
                                 </svg>
                             </button>
-                            <button class="form__nav-btn form__nav-btn_start display-none"> 
-                                <span>Star Now</span>                      
-                                <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="12px">
-                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                                d="M17.485,1.586 L7.586,11.485 L6.172,10.071 L6.172,10.071 L0.515,4.414 L1.929,3.000 L7.586,8.657 L16.071,0.172 L17.485,1.586 Z"/>
+                            <button class="form__nav-btn form__nav-btn_start display-none">
+                                <span>Star Now</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18px" height="12px">
+                                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                        d="M17.485,1.586 L7.586,11.485 L6.172,10.071 L6.172,10.071 L0.515,4.414 L1.929,3.000 L7.586,8.657 L16.071,0.172 L17.485,1.586 Z" />
                                 </svg>
-                             </button> 
+                            </button>
                         </div>
 
                         <div class="form__progress">

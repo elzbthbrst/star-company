@@ -60,7 +60,7 @@
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
-} 
+}
 
 .wrapper {
   /* background: url('../img/background-clouds-cold-dark.jpg'), 0 0 / 100% 100%  no-repeat; */
@@ -69,6 +69,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: "OpenSans", sans-serif;
+  overflow: hidden;
 
 }
 
@@ -211,7 +212,7 @@
   position: relative;
   width: 370px;
   height: 155px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .form__item {
@@ -220,6 +221,104 @@
   left: calc(50% - 181px);
   top: 0;
   width: 360px;
+}
+
+
+
+.select-dropdown__form {
+  position: relative;
+  height: 96px;
+  opacity: 1 !important;
+}
+
+.select-dropdown__form h4 {
+  font-size: 14px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.select-dropdown__select {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(110, 116, 124);
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+.checkbox-dropdown__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  border: inherit;
+  border-top: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(110, 116, 124);
+  line-height: 1.2;
+}
+
+.is-active .checkbox-dropdown__list {
+  opacity: 1;
+  pointer-events: auto;
+  /* make sure that the user still can select checkboxes */
+  position: absolute;
+  width: 352px;
+  left: 4px;
+  z-index: 5;
+  top: 80px;
+}
+
+.checkbox-dropdown__list li label {
+  display: block;
+  padding: 5px;
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  line-height: 2.222;
+  color: rgb(110, 116, 124);
+  transition: all 0.2s ease-out;
+  border-radius: 4px;
+
+}
+
+.checkbox-dropdown__list li label input[type="radio"] {
+  display: none;
+}
+
+.checkbox-dropdown__list li label:hover {
+  background-color: rgb(226, 226, 226);
+  color: white;
+}
+
+
+.select-dropdown__form:after {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: rgb(110, 116, 124);
+  top: 65px;
+  right: 30px;
+  margin-top: -3px;
+}
+
+.select-dropdown__form.is-active:after {
+  border-bottom-color: rgb(110, 116, 124);
+  border-top-color: transparent;
+  margin-top: -9px;
 }
 
 .form__item form h4 {
@@ -285,6 +384,7 @@
   text-align: center;
   margin-top: 16px;
 }
+
 .form__item .error-message {
   top: 100px;
   font-family: "OpenSans", sans-serif;
@@ -353,7 +453,7 @@
 }
 
 .form__nav-btn_start {
-  background-image: linear-gradient( 61deg, rgb(76,175,80) 0%, rgb(60,211,66) 100%);
+  background-image: linear-gradient(61deg, rgb(76, 175, 80) 0%, rgb(60, 211, 66) 100%);
 }
 
 .form__nav-btn_start svg {
@@ -369,7 +469,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .form__progress span {
