@@ -1,0 +1,150 @@
+/* styles/reset-style.css */
+
+/* styles/static-styles.css */
+
+.wrapper {
+    background-image: url("../img/background-clouds-cold-dark.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+/* styles/header.css */
+
+.main {
+    height: calc(100vh - 10.9rem);
+}
+
+.main__content h1 {
+    font-size: 3.5rem;
+    font-family: "ProximaNova", sans-serif;
+    color: rgb(131, 166, 228);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main__content h1 span {
+    color: #fff;
+    font-family: "OpenSans", sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: 0.5rem;
+    text-transform: capitalize;
+}
+
+.main__form {
+    margin-top: 4rem;
+}
+
+.form__container {
+    margin-left: 7.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.form__return {
+    border: 0.2rem solid rgb(255, 255, 255);
+    border-radius: 0.4rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    opacity: 0.502;
+    background: transparent;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.form__return:hover {
+    opacity: 1;
+}
+
+.form__wrapper {
+    position: relative;
+    width: 37rem;
+    height: 15.5rem;
+    overflow-x: clip;
+}
+
+/* styles/form-item.css */
+
+.form__nav-btn {
+    border-radius: 0.4rem;
+    height: 4rem;
+    padding: 1rem 1.6rem;
+    display: flex;
+    text-wrap: nowrap;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.form__nav-btn_next {
+    background-image: linear-gradient(61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
+}
+
+.form__nav-btn_next:hover {
+    box-shadow: 0 0.1rem 1.7rem 0 rgba(43, 160, 234, 0.66);
+}
+
+.form__nav-btn_start {
+    background-image: linear-gradient(61deg, rgb(76, 175, 80) 0%, rgb(60, 211, 66) 100%);
+}
+
+.form__nav-btn_start svg {
+    align-self: center;
+}
+
+.form__nav-btn_start:hover {
+    box-shadow: 0 0.1rem 1.7rem 0 rgba(76, 175, 80, 0.66);
+}
+
+.form__progress {
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.form__progress span {
+    display: block;
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+}
+
+/* slider classes start */
+.form__active {
+    transform: none;
+    z-index: 1;
+    opacity: 1;
+}
+
+.form__in {
+    transform: translateX(37rem);
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__out {
+    transform: translateX(-37rem);
+    z-index: -1;
+    opacity: 0;
+}
+
+/* slider classes end */
+
+.display-none {
+    display: none;
+}

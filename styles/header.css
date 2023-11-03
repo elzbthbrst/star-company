@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+}
+
+.header img {
+    height: 6.4rem;
+    width: 23.4rem;
+}
+
+.log-in {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.log-in__email {
+    position: relative;
+}
+
+.log-in input {
+    width: 20rem;
+    padding: 1.1rem 1.4rem;
+    border-radius: 0.4rem;
+    color: rgb(110, 116, 124);
+    background-color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+.log-in input::placeholder {
+    color: #6e747c;
+}
+
+.log-in__email .error-message {
+    top: 4.5rem;
+}
+
+.log-in__password {
+    position: relative;
+}
+
+.log-in__password a {
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    width: 100%;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.log-in button {
+    border-radius: 0.4rem;
+    padding: 1.05rem 2.05rem;
+    background-image: linear-gradient(61deg, rgb(88, 102, 234) 0%, rgb(43, 160, 234) 100%);
+    font-size: 1.3rem;
+}
+
+.log-in button:hover {
+    box-shadow: 0 0.1rem 1.7rem 0 rgba(43, 160, 234, 0.66);
+}

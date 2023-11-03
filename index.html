@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset-style.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/static-styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/form-item.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="script/config.js" defer></script>
+    <script src="script/animation.js" defer></script>
+    <script src="script/errors.js" defer></script>
     <script src="script/index.js" defer></script>
     <title>Star Company</title>
 </head>
@@ -18,29 +24,26 @@
                 <img src="img/logo.svg" alt="" class="header__logo">
                 <form action="" class="header__log-in log-in">
                     <div class="log-in__email">
-                        <input type="text" placeholder="Email">
-                        <p class="error-message">
-                            Please enter a valid email address
-                        </p>
+                        <input class="text-arial-bold" type="text" placeholder="Email">
+                        <p class="error-message text-arial-bold">Please enter a valid email address</p>
                     </div>
                     <div class="log-in__password">
-                        <input type="text" placeholder="Password">
-                        <a href="#">Forgot your password?</a>
+                        <input class="text-arial-bold" type="password" placeholder="Password">
+                        <a class="text-arial-bold" href="#">Forgot your password?</a>
                     </div>
-                    <button>Log In</button>
+                    <button class="text-arial-bold">Log In</button>
                 </form>
             </header>
             <!-- main -->
-            <main class="main">
+            <main class="main flex-center">
                 <div class="main__content">
                     <h1>
-                        StarCompany DESIGNS, MANUFACTURES AND
-                        <br>
+                        StarCompany DESIGNS, MANUFACTURES AND<br>
                         <span>Launches Advanced Rockets and spacecrafts</span>
                     </h1>
                     <section class="main__form form">
                         <div class="form__container">
-                            <button class="form__return">
+                            <button class="form__return flex-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="10px" height="17px">
                                     <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -50,50 +53,35 @@
                             <div class="form__wrapper">
                                 <div class="form__item">
                                     <form id="gender" class="select-dropdown__form">
-                                        <h4>
-                                            Who are you?
-                                        </h4>
-                                        <p class="select-dropdown__select">
-                                            Select your gender
-                                        </p>
-
-                                        <ul class="checkbox-dropdown__list">
+                                        <h4 class="opensans-bold-14">Who are you?</h4>
+                                        <p class="select-dropdown__select opensans-18-bg-border">Select your gender</p>
+                                        <ul class="checkbox-dropdown__list opensans-18-bg-border">
                                             <li>
-                                                <label>
-                                                    <input type="radio" value="Male" name="gender" />Male</label>
+                                                <label> <input type="radio" value="Male" name="gender" />Male</label>
                                             </li>
                                             <li>
-                                                <label>
-                                                    <input type="radio" value="Female" name="gender" />Female</label>
+                                                <label><input type="radio" value="Female" name="gender" />Female</label>
                                             </li>
                                         </ul>
                                     </form>
                                 </div>
+
                                 <div class="form__item">
                                     <form id="age" class="select-dropdown__form">
-                                        <h4>
-                                            What is your age?
-                                        </h4>
-                                        <p class="select-dropdown__select">
-                                            Select an age
-                                        </p>
-
-                                        <ul class="checkbox-dropdown__list">
+                                        <h4 class="opensans-bold-14">What is your age?</h4>
+                                        <p class="select-dropdown__select opensans-18-bg-border">Select an age</p>
+                                        <ul class="checkbox-dropdown__list opensans-18-bg-border">
                                             <li>
-                                                <label>
-                                                    <input type="radio" value="19" name="age" />19</label>
+                                                <label><input type="radio" value="19" name="age" />19</label>
                                             </li>
                                             <li>
-                                                <label>
-                                                    <input type="radio" value="20" name="age" />20</label>
+                                                <label><input type="radio" value="20" name="age" />20</label>
                                             </li>
                                             <li>
-                                                <label>
-                                                    <input type="radio" value="21" name="age" />21</label>
+                                                <label><input type="radio" value="21" name="age" />21</label>
                                             </li>
                                             <li>
-                                                <label>
-                                                    <input type="radio" value="22" name="age" />22</label>
+                                                <label><input type="radio" value="22" name="age" />22</label>
                                             </li>
                                         </ul>
                                     </form>
@@ -101,16 +89,14 @@
 
                                 <div class="form__item">
                                     <form action="">
-                                        <h4>
-                                            I`m from
-                                        </h4>
+                                        <h4 class="opensans-bold-14">I`m from</h4>
                                         <div class="select-wrapper">
-                                            <input name="location" placeholder="Please enter a location" type="text">
+                                            <input class="opensans-18-bg-border" name="location"
+                                                placeholder="Please enter a location" type="text">
                                         </div>
-
-
                                     </form>
-                                    <p class="form__about">
+
+                                    <p class="form__about opensans-bold-14">
                                         E.g.: New Roads or 70760
                                         <br>
                                         We don’t use postal addresses to contact members
@@ -120,35 +106,33 @@
 
                                 <div class="form__item">
                                     <form action="">
-                                        <h4>
-                                            Your email address
-                                        </h4>
+                                        <h4 class="opensans-bold-14">Your email address</h4>
                                         <div class="select-wrapper">
-                                            <input name="email" type="text" placeholder="Input your email">
+                                            <input class="opensans-18-bg-border" name="email" type="text"
+                                                placeholder="Input your email">
                                         </div>
-
                                     </form>
                                 </div>
 
                                 <div class="form__item">
                                     <form action="">
-                                        <h4>
-                                            Create your password
-                                        </h4>
+                                        <h4 class="opensans-bold-14">Create your password</h4>
                                         <div class="select-wrapper">
-                                            <input name="password" type="password"
+                                            <input class="opensans-18-bg-border" name="password" type="password"
                                                 placeholder="Please enter a password">
                                         </div>
-
                                     </form>
-                                    <p class="form__about">
+
+                                    <p class="form__about opensans-bold-14">
                                         By clicking the button above you agree to <a href="#">out terms of use</a> and
                                         <a href="#">Privacy Policy</a> Including use of cookies and to receive
                                         newsletters, account updates and offers sent by SentCompany.
                                     </p>
                                 </div>
+
                             </div>
-                            <button class="form__nav-btn form__nav-btn_next"> <span>Next step</span>
+                            <button class="form__nav-btn form__nav-btn_next">
+                                <span class="opensans-bold-14">Next step</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="10px" height="17px">
                                     <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -156,7 +140,7 @@
                                 </svg>
                             </button>
                             <button class="form__nav-btn form__nav-btn_start display-none">
-                                <span>Star Now</span>
+                                <span class="opensans-bold-14">Star Now</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="18px" height="12px">
                                     <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
@@ -165,7 +149,7 @@
                             </button>
                         </div>
 
-                        <div class="form__progress">
+                        <div class="form__progress flex-center">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -176,7 +160,6 @@
                 </div>
             </main>
         </div>
-
     </div>
 </body>
 

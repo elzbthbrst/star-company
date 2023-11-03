@@ -1,0 +1,121 @@
+/* OpenSans font */
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/OpenSans-Bold.eot");
+    src:
+        local("Open Sans Bold"),
+        local("OpenSans-Bold"),
+        url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/OpenSans//OpenSans-Bold.woff") format("woff"),
+        url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans/OpenSans-Light.eot");
+    src:
+        local("Open Sans Light"),
+        local("OpenSans-Light"),
+        url("../fonts/OpenSans/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/OpenSans/OpenSans-Light.woff") format("woff"),
+        url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ProximaNova font */
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../fonts/ProximaNova/ProximaNova-Bold.eot");
+    src:
+        local("Proxima Nova Bold"),
+        local("ProximaNova-Bold"),
+        url("../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"),
+        url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../fonts/ProximaNova/ProximaNovaExCn-Thin.eot");
+    src:
+        local("Proxima Nova Condensed Thin"),
+        local("ProximaNovaCond-Thin"),
+        url("../fonts/ProximaNova/ProximaNovaExCn-Thin.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ProximaNova/ProximaNovaExCn-Thin.woff") format("woff"),
+        url("../fonts/ProximaNova/ProximaNovaExCn-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* static-classes */
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 7px;
+    }
+
+    .form__nav-btn svg {
+        transform: scale(0.7);
+        margin-bottom: -0.27rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 5px;
+    }
+
+    .form__nav-btn svg {
+        transform: scale(0.5);
+        margin-bottom: -0.8rem;
+    }
+}
+
+.text-arial-bold {
+    font-family: "Arial", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.opensans-18-bg-border {
+    border-radius: 0.4rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(110, 116, 124);
+}
+
+.opensans-bold-14 {
+    font-size: 1.4rem;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.error-message {
+    border-radius: 0.4rem;
+    background-color: rgb(226, 42, 50);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 1.4rem 0;
+    font-size: 1.1rem;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

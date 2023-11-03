@@ -1,0 +1,123 @@
+.form__item {
+    position: absolute;
+    transition: 0.5s;
+    left: calc(50% - 18.1rem);
+    top: 0;
+    width: 36rem;
+}
+
+.form__item form input {
+    border: none;
+    width: 100%;
+    padding: 1.6rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.form__item form input[type="password"] {
+    font: caption;
+    letter-spacing: 0.8rem;
+}
+
+.form__item form input[type="password"]::placeholder {
+    font-family: "OpenSans", sans-serif;
+    letter-spacing: normal;
+}
+
+.form__item .error-message {
+    top: 10rem;
+    font-family: "OpenSans", sans-serif;
+    font-size: 1.4rem;
+}
+
+.form__item .form__about a {
+    text-transform: capitalize;
+    color: inherit;
+}
+
+.form__item form {
+    border-radius: 0.4rem;
+    background-color: rgb(150, 163, 173);
+    opacity: 0.902;
+    padding: 1.2rem 0.4rem 0.4rem.4rem;
+    text-align: center;
+}
+.select-dropdown__form {
+    position: relative;
+    height: 9.6rem;
+    opacity: 1 !important;
+}
+
+.select-dropdown__form:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 0.6rem solid transparent;
+    border-top-color: rgb(110, 116, 124);
+    top: 6.5rem;
+    right: 3rem;
+    margin-top: -0.3rem;
+}
+
+.select-dropdown__form.is-active:after {
+    border-bottom-color: rgb(110, 116, 124);
+    border-top-color: transparent;
+    margin-top: -0.9rem;
+}
+
+.select-dropdown__select {
+    padding: 1.6rem;
+    line-height: 1.2;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+
+.checkbox-dropdown__list {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    width: 100%;
+    padding: 1rem;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.is-active .checkbox-dropdown__list {
+    opacity: 1;
+    position: absolute;
+    width: 35.2rem;
+    left: 0.4rem;
+    z-index: 5;
+    top: 8rem;
+    cursor: pointer;
+}
+
+.is-active .checkbox-dropdown__list li label {
+    cursor: pointer;
+}
+
+.checkbox-dropdown__list li label {
+    display: block;
+    padding: 0.5rem;
+    line-height: 2.222;
+    transition: all 0.2s ease-out;
+    border-radius: 0.4rem;
+}
+
+.checkbox-dropdown__list li label input[type="radio"] {
+    display: none;
+}
+
+.checkbox-dropdown__list li label:hover {
+    background-color: rgb(226, 226, 226);
+    color: white;
+}
+
+.form__about {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 1.6rem;
+}
