@@ -6,6 +6,15 @@ async function setError(name) {
     formItems[active].insertAdjacentHTML('beforeend', errorTemplate)
 }
 
+async function setLogInError(name) {
+    const container = getInputContainer(name)
+    if (container.querySelector(SELECTOR_ERROR_MESSAGE)) {
+        return
+    }
+    const errorTemplate = await getErrorTemplate(name)
+    container.insertAdjacentHTML('beforeend', errorTemplate)
+}
+
 async function getErrorTemplate(name) {
     const errorList = await fetchError()
     const errorMessage = errorList[name][0]
@@ -27,5 +36,24 @@ async function fetchError() {
 function removeError() {
     if (formItems[active].querySelector(SELECTOR_ERROR_MESSAGE)) {
         formItems[active].querySelector(SELECTOR_ERROR_MESSAGE).remove()
+    }
+}
+
+function validateData(el) {
+    if (!REGEX_VALID[el.id].test(el.value)) {
+        setLogInError(el.id)
+    } else {
+        removeLogInError(el.id)
+    }
+}
+
+function getInputContainer(name) {
+    return logInform.querySelector(`.log-in__${name}`)
+}
+
+function removeLogInError(name) {
+    const container = getInputContainer(name)
+    if (container.querySelector(SELECTOR_ERROR_MESSAGE)) {
+        container.querySelector(SELECTOR_ERROR_MESSAGE).remove()
     }
 }

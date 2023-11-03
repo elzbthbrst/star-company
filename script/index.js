@@ -1,3 +1,4 @@
+logInform.addEventListener('submit', onLogInSubmit)
 nextBtn.addEventListener('click', onNextBtnClick)
 returnBtn.addEventListener('click', onReturnBtnClick)
 formGender.addEventListener('click', onFormGenderClick)
@@ -8,13 +9,30 @@ let active = 0
 
 slideForm()
 
-function onFormGenderClick(e) {
+function onLogInSubmit(e) {
+    e.preventDefault()
+    const email = logInform.email
+    const password = logInform.password
+    validateData(email)
+    validateData(password)
+    if (!REGEX_VALID.email.test(email.value)
+        || !REGEX_VALID.password.test(password.value)) {
+        return
+    }
+    const data = {
+        'email': email.value,
+        'password': password.value,
+    }
+    console.log(data);
+}
+
+function onFormGenderClick() {
     formGender.classList.toggle(CLASS_IS_ACTIVE)
     onOptionClick(formGender)
 
 }
 
-function onDFormAgeClick(e) {
+function onDFormAgeClick() {
     formAge.classList.toggle(CLASS_IS_ACTIVE)
     onOptionClick(formAge)
 }

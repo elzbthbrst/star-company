@@ -6,7 +6,19 @@
     width: 36rem;
 }
 
-.form__item form input {
+.form__item form {
+    
+}
+
+.form__element {
+    border-radius: 0.4rem;
+    background-color: rgb(150, 163, 173);
+    opacity: 0.902;
+    padding: 1.2rem 0.4rem 0.4rem.4rem;
+    text-align: center;
+}
+
+.form__element input {
     border: none;
     width: 100%;
     padding: 1.6rem;
@@ -15,12 +27,20 @@
     margin-top: 0.8rem;
 }
 
-.form__item form input[type="password"] {
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 40rem  rgb(255, 255, 255) inset;
+}
+
+
+
+.form__element input[type="password"] {
     font: caption;
     letter-spacing: 0.8rem;
 }
 
-.form__item form input[type="password"]::placeholder {
+.form__element input[type="password"]::placeholder {
     font-family: "OpenSans", sans-serif;
     letter-spacing: normal;
 }
@@ -31,18 +51,6 @@
     font-size: 1.4rem;
 }
 
-.form__item .form__about a {
-    text-transform: capitalize;
-    color: inherit;
-}
-
-.form__item form {
-    border-radius: 0.4rem;
-    background-color: rgb(150, 163, 173);
-    opacity: 0.902;
-    padding: 1.2rem 0.4rem 0.4rem.4rem;
-    text-align: center;
-}
 .select-dropdown__form {
     position: relative;
     height: 9.6rem;
@@ -120,4 +128,9 @@
     line-height: 1.4;
     text-align: center;
     margin-top: 1.6rem;
+}
+
+.form__about a {
+    text-transform: capitalize;
+    color: inherit;
 }

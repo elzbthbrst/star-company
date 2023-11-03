@@ -47,6 +47,7 @@
     margin-top: 4rem;
 }
 
+
 .form__container {
     margin-left: 7.4rem;
     display: flex;
@@ -64,6 +65,7 @@
     background: transparent;
     cursor: pointer;
     margin-bottom: 1rem;
+    transition: .5s;
 }
 
 .form__return:hover {
@@ -89,6 +91,7 @@
     margin-bottom: 1rem;
     gap: 1rem;
     align-items: flex-end;
+    transition: .5s;
 }
 
 .form__nav-btn_next {

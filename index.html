@@ -24,11 +24,11 @@
                 <img src="img/logo.svg" alt="" class="header__logo">
                 <form action="" class="header__log-in log-in">
                     <div class="log-in__email">
-                        <input class="text-arial-bold" type="text" placeholder="Email">
-                        <p class="error-message text-arial-bold">Please enter a valid email address</p>
+                        <input id="email" class="text-arial-bold" type="email" placeholder="Email">
+                        <!-- <p class="error-message text-arial-bold">Please enter a valid email address</p> -->
                     </div>
                     <div class="log-in__password">
-                        <input class="text-arial-bold" type="password" placeholder="Password">
+                        <input id="password" class="text-arial-bold" type="password" placeholder="Password">
                         <a class="text-arial-bold" href="#">Forgot your password?</a>
                     </div>
                     <button class="text-arial-bold">Log In</button>
@@ -52,7 +52,7 @@
                             </button>
                             <div class="form__wrapper">
                                 <div class="form__item">
-                                    <form id="gender" class="select-dropdown__form">
+                                    <form id="gender" class="select-dropdown__form form__element">
                                         <h4 class="opensans-bold-14">Who are you?</h4>
                                         <p class="select-dropdown__select opensans-18-bg-border">Select your gender</p>
                                         <ul class="checkbox-dropdown__list opensans-18-bg-border">
@@ -67,7 +67,7 @@
                                 </div>
 
                                 <div class="form__item">
-                                    <form id="age" class="select-dropdown__form">
+                                    <form id="age" class="select-dropdown__form form__element">
                                         <h4 class="opensans-bold-14">What is your age?</h4>
                                         <p class="select-dropdown__select opensans-18-bg-border">Select an age</p>
                                         <ul class="checkbox-dropdown__list opensans-18-bg-border">
@@ -88,7 +88,7 @@
                                 </div>
 
                                 <div class="form__item">
-                                    <form action="">
+                                    <form class="form__element" action="">
                                         <h4 class="opensans-bold-14">I`m from</h4>
                                         <div class="select-wrapper">
                                             <input class="opensans-18-bg-border" name="location"
@@ -105,7 +105,7 @@
                                 </div>
 
                                 <div class="form__item">
-                                    <form action="">
+                                    <form class="form__element" action="">
                                         <h4 class="opensans-bold-14">Your email address</h4>
                                         <div class="select-wrapper">
                                             <input class="opensans-18-bg-border" name="email" type="text"
@@ -115,7 +115,7 @@
                                 </div>
 
                                 <div class="form__item">
-                                    <form action="">
+                                    <form class="form__element" action="">
                                         <h4 class="opensans-bold-14">Create your password</h4>
                                         <div class="select-wrapper">
                                             <input class="opensans-18-bg-border" name="password" type="password"
